@@ -29,20 +29,20 @@ int main()                                      // All C++ programs need an entr
     void *v1;                                   // a strange data type which is best avoided as it overrides the inbuilt type behaviour - just don't do it!! The * is a pointer to the variable as a void on its own is nothing but now it is a pointer to where "nothing" is stored.
     wchar_t wc1;                                // a 2 byte unsigned integer (traditionally, can be as small as 1 byte or as large as 4 and signed or unsigned, confusing, I know). Used to represent character sets with more that 255 codes (unicode for example)
 
-    cout << "Unsigned char size: " << sizeof(uc1) << " min / max: " << cout << std::numeric_limits<unsigned char>::min() << " " << cout << std::numeric_limits<unsigned char>::max() << endl;
-    cout << "Signed char size: " << sizeof(c1) << " min / max: " << cout << std::numeric_limits<signed char>::min() << " " << cout << std::numeric_limits<signed char>::max() << endl;
-    cout << "Unsigned int size: " << sizeof(ui1) << " min / max: " << cout << std::numeric_limits<unsigned int>::min() << " " << cout << std::numeric_limits<unsigned int>::max() <<  endl;
-    cout << "Signed int size: " << sizeof(i1) << " min / max: " << cout << std::numeric_limits<signed int>::min() << " " << cout << std::numeric_limits<signed int>::max() <<  endl;
-    cout << "Unsigned short int size: " << sizeof(us1) << " min / max: " << cout << std::numeric_limits<unsigned short int>::min() << " " << cout << std::numeric_limits<unsigned short int>::max() <<  endl;
-    cout << "Signed short int size: " << sizeof(s1) << " min / max: " << cout << std::numeric_limits<signed short int>::min() << " " << cout << std::numeric_limits<signed short int>::max() <<  endl;
-    cout << "Unsigned long size: " << sizeof(ul1) << " min / max: " << cout << std::numeric_limits<unsigned long>::min() << " " << cout << std::numeric_limits<unsigned long>::max() <<  endl;
-    cout << "Signed long size: " << sizeof(l1) << " min / max: " << cout << std::numeric_limits<signed long>::min() << " " << cout << std::numeric_limits<signed long>::max() <<  endl;
-    cout << "float size: " << sizeof(f1) << " min / max: " << cout << std::numeric_limits<float>::min() << " " << cout << std::numeric_limits<float>::max() <<  endl;
-    cout << "double size: " << sizeof(d) << " min / max: " << cout << std::numeric_limits<double>::min() << " " << cout << std::numeric_limits<double>::max() <<  endl;
-    cout << "long double size: " << sizeof(ld1) << " min / max: " << cout << std::numeric_limits<long double>::min() << " " << cout << std::numeric_limits<long double>::max() <<  endl;
-    cout << "bool size: " << sizeof(b) << " min / max: " << cout << std::numeric_limits<bool>::min() << " " << cout << std::numeric_limits<bool>::max() <<  endl;
+    cout << "Unsigned char size: " << sizeof(uc1) << " min / max: " << cout << numeric_limits<unsigned char>::min() << " " << cout << numeric_limits<unsigned char>::max() << endl;
+    cout << "Signed char size: " << sizeof(c1) << " min / max: " << cout << numeric_limits<signed char>::min() << " " << cout << numeric_limits<signed char>::max() << endl;
+    cout << "Unsigned int size: " << sizeof(ui1) << " min / max: " << cout << numeric_limits<unsigned int>::min() << " " << cout << numeric_limits<unsigned int>::max() <<  endl;
+    cout << "Signed int size: " << sizeof(i1) << " min / max: " << cout << numeric_limits<signed int>::min() << " " << cout << numeric_limits<signed int>::max() <<  endl;
+    cout << "Unsigned short int size: " << sizeof(us1) << " min / max: " << cout << numeric_limits<unsigned short int>::min() << " " << cout << numeric_limits<unsigned short int>::max() <<  endl;
+    cout << "Signed short int size: " << sizeof(s1) << " min / max: " << cout << numeric_limits<signed short int>::min() << " " << cout << numeric_limits<signed short int>::max() <<  endl;
+    cout << "Unsigned long size: " << sizeof(ul1) << " min / max: " << cout << numeric_limits<unsigned long>::min() << " " << cout << numeric_limits<unsigned long>::max() <<  endl;
+    cout << "Signed long size: " << sizeof(l1) << " min / max: " << cout << numeric_limits<signed long>::min() << " " << cout << numeric_limits<signed long>::max() <<  endl;
+    cout << "float size: " << sizeof(f1) << " min / max: " << cout << numeric_limits<float>::min() << " " << cout << numeric_limits<float>::max() <<  endl;
+    cout << "double size: " << sizeof(d) << " min / max: " << cout << numeric_limits<double>::min() << " " << cout << numeric_limits<double>::max() <<  endl;
+    cout << "long double size: " << sizeof(ld1) << " min / max: " << cout << numeric_limits<long double>::min() << " " << cout << numeric_limits<long double>::max() <<  endl;
+    cout << "bool size: " << sizeof(b) << " min / max: " << cout << numeric_limits<bool>::min() << " " << cout << numeric_limits<bool>::max() <<  endl;
     cout << "void size: " << sizeof(v1) <<  " min / max: How do you show min / max for nothing?" << endl;
-    cout << "wchar_t size: " << sizeof(wc1) << " min / max: " << cout << std::numeric_limits<wchar_t>::min() << " " << cout << std::numeric_limits<wchar_t>::max() <<  endl;
+    cout << "wchar_t size: " << sizeof(wc1) << " min / max: " << cout << numeric_limits<wchar_t>::min() << " " << cout << numeric_limits<wchar_t>::max() <<  endl;
 
     cin.get();                                  // End of main()
 }
