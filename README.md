@@ -1,2 +1,2 @@
-# CPlusPlusLessonTwo
-Second C++ lesson (using C++ 14)
+# CPlusPlusLessonOne
+First foray into C++
